@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="static/Usercontroller.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="static/estilos.css"> 
+    <meta charset="UTF-8">
+    <title>Coleta paises</title>
+</head>
+
+<body style="font-size:large">
+    <center>
+        <form id="fdados" onsubmit="logar(event)">
+            <p>Lista de Paises com login</p>
+            <p><input type="text" id="usuario" placeholder="Informe o usuário"></p>   
+            <p><input type="text" id="senha" placeholder="Informe a senha"></p>
+            <p><input type="submit" value="logar"></p>
+        </form>
+
+        <form id="fdados" onsubmit="NovoPais(event)">
+            <p>Lista de Paises com login</p>
+            <p><input type="text" id="Nome" placeholder="Informe o Nome"></p>   
+            <p><input type="text" id="sigla" placeholder="Informe a Sigla"></p>
+            <p><input type="text" id="newidioma" placeholder="Informe o Idioma"></p>
+            <p><input type="submit" value="Cadastrar"></p>
+        </form>
+
+        <form onsubmit="listabyId(event)">
+            <p><input type="text" id="id" placeholder="Informe o id"></p>   
+            <p><input type="submit" value="Buscar pais"></p>
+        </form>
+
+        <form onsubmit="listarpornome(event)">
+            <p><input type="text" id="nomepais" placeholder="Informe o nome"></p>   
+            <p><input type="submit" value="Buscar por nome"></p>
+        </form>
+
+        <form onsubmit="listarpeloidioma(event)">
+            <p><input type="text" id="idioma" placeholder="Informe o Idioma"></p>   
+            <p><input type="submit" value="Buscar por idioma"></p>
+        </form>
+
+        <button onclick="listarPais()">Clique para visualizar lista de paises</button>
+        <br><br>
+        <div id="pais">
+
+        </div>
+    </center>
+
+</body>
+    
+</html>
